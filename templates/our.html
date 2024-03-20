@@ -12,6 +12,19 @@
 		}
 		header {
 			background-image: url("/static/sky.jpg");
+			animation: example1;
+			animation-duration: 4s;
+			animation-iteration-count: 2;
+		}
+		@keyframes example1 {
+			from {
+				transform: rotate(-10deg) translateY(-100%);
+				opacity: 0;
+			}
+			to {
+				transform: rotate(0deg) translateY(0%);
+				opacity: 1;
+			}
 		}
 		footer {
 			background-color: #f08080;
