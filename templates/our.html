@@ -20,8 +20,13 @@
 		article {
 			text-align: center;
 			background-color: #fcfbd7;
-			padding: 10pX;
-			margin: 10pX;
+			padding: 5pX;
+			margin: 5pX;
+		}
+		figure {
+			background-color: #fcfbd7;
+			padding: 5pX;
+			margin: 5pX;
 		}
 		h2 {
 			text-decoration: underline solid white 30%;
@@ -30,9 +35,13 @@
 		h4 {
 			text-decoration: underline solid white 30%;
 			text-shadow: 2px 2px #eecef5;
-		}
-		h4 {
 			font-size: 30px;
+		}
+
+		h5 {
+			text-decoration: underline solid white 30%;
+			text-shadow: 3px 3px #f5d5d5;
+			font-size: 40px;
 		}
 		nav{
 			font-size: 14px;
@@ -40,6 +49,10 @@
 			margin: 10pX;
 			background-color: #60c7f7;
 			background: linear-gradient(120deg, violet 50%, limegreen 50%);
+		}
+		p {
+			font-size: 15px;
+			text-decoration: underline solid #f5d5d5 30%;
 		}
 		h3::before {content:"\1F9E1"; }
 		h3::after {content:"\1F499"; }
@@ -62,8 +75,8 @@
 </head>
 <body>
 	<header>
-		<h1 style="color:#ffff00" >彼此資料</h1>
-		<p style="color:orangered;text-align: center">相距21公里的戀愛,神岡-太平</p>
+		<h1 style="color:white">彼此資料</h1>
+		<p style="color:white;text-align: center">相距21公里的戀愛,神岡-太平</p>
 	</header>
 	<nav>
 			<a href ="/love" target="_blank">首頁</a> |
@@ -74,7 +87,6 @@
 	</nav>
 
 	<main>
-		<article>
 			<figure>
 				<figcaption>
 					<h4>彼此的照片</h4>
@@ -83,10 +95,8 @@
 				<img src = "static/ou.jpg" width ="350">
 				<img src = "static/sam.jpg" width ="350">
 			</figure>
-		</article>
 
 
-		<article>
 			<figure>
 				<figcaption>
 					<h4>去蝙蝠橋的紀錄片</h4>
@@ -94,10 +104,9 @@
 				</figcaption>
 				<img src = "static/love.jpg" width ="350">
 			</figure>
-		</article>
 
 		<article>
-			<h1 >基本資料</h1>
+			<h5 >基本資料</h5>
 			<table width="100%" border="1">
 				<tr>
 					<td>
