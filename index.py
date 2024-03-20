@@ -30,4 +30,4 @@ def photo():
     return render_template("photo.html")
 
 #if __name__ == "__main__":
-#  app.run()
+#   app.run()
