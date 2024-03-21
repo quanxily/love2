@@ -21,7 +21,8 @@ html = """
 
         }
         footer {
-           background-image: url("/static/vv.jpg");
+            background-color: #c5e0ed;
+
         }
 
 
@@ -29,6 +30,14 @@ html = """
             padding: 10pX;
             margin: 10pX;
         }
+        h2 {
+            border-color: white;
+            border-style: solid ;
+            border-radius: 12px;
+            border-width: 5px;
+            background-color: skyblue;
+        }
+
 
         p {
             font-size: 20px;
@@ -39,10 +48,18 @@ html = """
             border-style: solid ;
             border-radius: 12px;
             border-width: 5px;
-            background-color: #e4f3fe;
+            background-color: #e99dfa ;
             font-size: 25px;
         }
 
+        h3 {
+            border-color: white;
+            border-style: solid ;
+            border-radius: 12px;
+            border-width: 5px;
+            background-color: #f5d5d5;
+            font-size: 25px;
+        }
         h1 {
             text-decoration: underline solid white 30%;
             text-shadow: 2px 2px #e4f3fe;
@@ -103,14 +120,12 @@ html = """
             <div class ="colum middle">
                 <h4>相識到相戀的故事</h4>
                 <p><a href ="/story">相識到相戀故事</a></p> 
-                <img src = "static/lv.jpg" width ="350"> 
-                <iframe src="https://www.youtube.com/embed/t5O51RmCTsg" allowfullscreen width="300" height="350" ></iframe>
+                <img src = "static/lv.jpg" width ="200"> 
             </div>
 
             <div class="colum side">
                 <h4>照片牆</h4>
                 <p><a href ="/photo">照片牆</a></p> 
-                <img src = "static/hug.jpg" width ="350"> 
             </div>
         </section>
     </article>
@@ -128,7 +143,6 @@ html = """
 def index():
     x = html
     return x
-
 @app.route("/love")
 def love():
     return render_template("love.html")
@@ -145,5 +159,5 @@ def story():
 def photo():
     return render_template("photo.html")
 
-#if __name__ == "__main__":
-#  app.run()
+if __name__ == "__main__":
+  app.run()
