@@ -18,23 +18,8 @@ html = """
         }
         header {
             background-image: url("/static/ve.jpg");
-            animation: example1;
-            animation-duration: 4s;
-            animation-iteration-count: 1;
-
         }
 
-        @keyframes example1 {
-            from {
-                transform: rotate(-15deg) translateY(-100%);
-                opacity: 0;
-            }
-            to {
-                transform: rotate(0deg) translateY(0%);
-                opacity: 1;
-            }
-        }
-        
         footer {
            background-image: url("/static/ve.jpg");
         }
