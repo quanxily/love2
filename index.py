@@ -26,8 +26,8 @@ html = """
 
 
         article {
-            padding: 5pX;
-            margin: 5pX;
+            padding: 10pX;
+            margin: 10pX;
         }
 
         p {
@@ -57,13 +57,13 @@ html = """
         }
 
         .colum {
-            padding: 5px;
+            padding: 12px;
         }
 
         .colum.side {
             flex: 1;
             background-image: url("/static/le.jpg");
-            padding: 5px;
+            padding: 10px;
             margin-bottom: 10px;
             overflow: hidden;
         }
@@ -71,7 +71,7 @@ html = """
         .colum.middle {
             flex: 1;
             background-image: url("/static/le.jpg");
-            padding: 15px;
+            padding: 10px;
             margin-bottom: 10px;
             overflow: hidden;
         }
