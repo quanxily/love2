@@ -13,7 +13,7 @@ html = """
     <style type="text/css">
         header, footer {
             text-align: center;
-            padding: 10pX;
+            padding: 15pX;
             margin: 10pX;
         }
         header {
