@@ -14,7 +14,7 @@ html = """
         header, footer {
             text-align: center;
             padding: 15pX;
-            margin: 10pX;
+            margin: 15pX;
         }
         header {
             background-image: url("/static/ve.jpg");
