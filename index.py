@@ -24,12 +24,6 @@ html = """
            background-image: url("/static/ve.jpg");
         }
 
-
-        article {
-            padding: 10pX;
-            margin: 10pX;
-        }
-
         p {
             font-size: 20px;
         }
