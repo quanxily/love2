@@ -81,6 +81,13 @@ html = """
                 -webkit-flex-direction: column;
             }
 
+
+        @media(max-width: 580px) {
+            .row {
+                flex-direction: column;
+                -webkit-flex-direction: column;
+            }
+
     </style>
 </head>
 
