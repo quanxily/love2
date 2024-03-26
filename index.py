@@ -62,7 +62,7 @@ html = """
         .colum.side {
             flex: 1;
             background-image: url("/static/le.jpg");
-            padding: 20px;
+            padding: 15px;
             margin-bottom: 10px;
             overflow: hidden;
         }
