@@ -55,7 +55,7 @@ html = """
         }
 
         .colum {
-            padding: 10px;
+            padding: 5px;
         }
 
         .colum.side {
