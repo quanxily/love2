@@ -69,7 +69,7 @@ html = """
         .colum.middle {
             flex: 1;
             background-image: url("/static/le.jpg");
-            padding: 15px;
+            padding: 10px;
             margin-bottom: 10px;
             overflow: hidden;
         }
