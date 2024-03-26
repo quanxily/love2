@@ -52,6 +52,8 @@ html = """
             display: flex;
             flex-wrap: wrap;
             align-items: stretch;
+            padding: 5pX;
+            margin: 5pX;
         }
 
         .colum {
