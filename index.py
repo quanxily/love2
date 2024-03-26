@@ -13,8 +13,8 @@ html = """
     <style type="text/css">
         header, footer {
             text-align: center;
-            padding: 5pX;
-            margin: 5pX;
+            padding: 10pX;
+            margin: 10pX;
         }
         header {
             background-image: url("/static/ve.jpg");
