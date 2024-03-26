@@ -13,21 +13,21 @@ html = """
     <style type="text/css">
         header, footer {
             text-align: center;
-            padding: 10pX;
-            margin: 10pX;
+            padding: 5pX;
+            margin: 5pX;
         }
         header {
             background-image: url("/static/ve.jpg");
 
         }
         footer {
-           background-image: url("/static/vv.jpg");
+           background-image: url("/static/ve.jpg");
         }
 
 
         article {
-            padding: 10pX;
-            margin: 10pX;
+            padding: 5pX;
+            margin: 5pX;
         }
 
         p {
