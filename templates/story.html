@@ -127,10 +127,53 @@
 				
 			<div class ="colum middle">
 				<h2>三個月相戀</h2>
-				<p style="color:#c16fd1">四月到七月這階段我們是熱戀期,我們美意天都會聊好多好多甚至跟彼此說愛你,或是有時候會謝謝寶寶對我疼愛與寵愛,也會謝謝寶寶辛苦在我來回,因為我當時還沒有機車,但是我們中間也有出現過磨合期,在七月份的時候我們的關係變得很奇妙,就是我感覺寶寶好像會離開我醬,原本以為會就此結束,最後我們依然還是在一起,因為當我提出問題,而寶寶比我早感覺到,寶寶也願意與我一起面對,也知道自己對我態度不好感到抱歉,謝謝寶寶</p>
+				<p style="color:#c16fd1">四月到七月這階段我們是熱戀期,我們美意天都會聊好多好多甚至跟彼此說愛你,或是有時候會謝謝寶寶對我疼愛與寵愛,也會謝謝寶寶辛苦載我來回,因為我當時還沒有機車,但是我們中間也有出現過磨合期,在七月份的時候我們的關係變得很奇妙,就是我感覺寶寶好像會離開我醬,原本以為會就此結束,最後我們依然還是在一起,因為當我提出問題,而寶寶比我早感覺到,寶寶也願意與我一起面對,也知道自己對我態度不好感到抱歉,謝謝寶寶</p>
 
 				<p style="color:#f2a30f">下面是與寶寶和寶寶家人去南投集集鐵道,我想拍這種照片很久了,寶寶幫我達成心願了</p>
-				<img src = "static/hug.jpg" width ="300" height="350">
+				<div class="image-container" id="example1">
+				<img src = "static/hug.jpg" width ="350" height="400">
+				</div>
+				<button onclick="prevImage()">❮</button>
+				<button onclick="nextImage()">❯</button>
+				<button onclick="toggleCarousel()">暫停</button>
+				<script>
+				    var intervalId;
+
+				    function changeImage(containerId, imageName) {
+				        var container = document.getElementById(containerId);
+				        var image = container.querySelector("img");
+				        image.src = imageName;
+				    }
+
+				    var images = ["static/hug.jpg", "static/7.jpg", "static/72.jpg", "static/73.jpg", "static/74.jpg", "static/75.jpg", "static/76.jpg", "static/77.jpg"];
+				    var currentIndex = 0;
+
+				    function prevImage() {
+				        currentIndex = (currentIndex - 1 + images.length) % images.length;
+				        changeImage('example1', images[currentIndex]);
+				    }
+
+				    function nextImage() {
+				        currentIndex = (currentIndex + 1) % images.length;
+				        changeImage('example1', images[currentIndex]);
+				    }
+
+				    function toggleCarousel() {
+				        var button = document.querySelector("button:last-of-type");
+				        if (intervalId) {
+				            clearInterval(intervalId);
+				            intervalId = null;
+				            button.textContent = "開始";
+				        } else {
+				            intervalId = setInterval(function() {
+				                nextImage();
+				            }, 1000);
+				            button.textContent = "暫停";
+				        }
+				    }
+
+				    toggleCarousel();
+				</script>	
 			</div>
 
 			<div class="colum side">
