@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>基本資料</title>
+	<style type="text/css">
+		header, footer, nav {
+			text-align: center;
+			padding: 5pX;
+			margin: 5pX;
+		}
+		header {
+			background-image: url("/static/sky.jpg");
+			animation: example1;
+			animation-duration: 4s;
+			animation-iteration-count: 2;
+		}
+		@keyframes example1 {
+			from {
+				transform: rotate(-10deg) translateY(-100%);
+				opacity: 0;
+			}
+			to {
+				transform: rotate(0deg) translateY(0%);
+				opacity: 1;
+			}
+		}
+		footer {
+			background-image: url("/static/lo.jpg");
+			font-size: 12pt;
+		}
+		article {
+			text-align: center;
+			background-color: #fcfbd7;
+			padding: 5pX;
+			margin: 5pX;
+		}
+		figure {
+			background-color: #fcfbd7;
+			padding: 5pX;
+			margin: 5pX;
+		}
+		h2 {
+			text-decoration: underline solid white 30%;
+			text-shadow: 2px 2px #e4f3fe;
+		}
+		h4 {
+			text-decoration: underline solid white 30%;
+			text-shadow: 2px 2px #eecef5;
+			font-size: 30px;
+		}
+
+		h5 {
+			text-decoration: underline solid white 30%;
+			text-shadow: 3px 3px #f5d5d5;
+			font-size: 30px;
+		}
+		h1 {
+			font-size: 35px;
+		}
+		nav{
+			font-size: 14px;
+			padding: 10pX;
+			margin: 10pX;
+			background-color: #60c7f7;
+			background: linear-gradient(120deg, violet 50%, limegreen 50%);
+		}
+		p {
+			font-size: 15px;
+			text-decoration: underline solid #caf8fa 30%;
+		}
+		h3::before {content:"\1F9E1"; }
+		h3::after {content:"\1F499"; }
+		p::before {content:"\1F49C"; }
+		h2::before {content:"\1F3C0"; }
+		h4::before {content:"\1F987"; }
+		h5::before {content:"\1F496"; }
+
+
+		 @media (max-width: 800px) {
+		 	flex: 50%;
+		 	max-width: 50%;
+		 }
+
+		  @media (max-width: 600px) {
+		 	flex: 100%;
+		 	max-width: 100%;
+		 }
+		 
+	</style>
+</head>
+<body>
+	<header>
+		<h1 style="color:white">彼此資料</h1>
+		<p style="color:white;text-align: center">相距21公里的戀愛,神岡-太平</p>
+	</header>
+	<nav>
+		<a href ="/our">基本資料</a> |
+		<a href ="/story">相識到相戀故事</a> |
+		<a href ="/photo">照片牆2023</a> 
+	</nav>
+
+	<main>
+			<figure>
+				<figcaption>
+					<h5>彼此的照片</h5>
+					<p>下面是我們的個人照和合照以及一首歌代表剛相識的我們</p>
+				</figcaption>
+				<img src = "static/qu.jpg" width ="300">
+				<img src = "static/ou.jpg" width ="300">
+				<img src = "static/sam.jpg" width ="300">
+				<iframe src="https://www.youtube.com/embed/NmG89cmIG6Q" allowfullscreen width="300" height="400" ></iframe>
+			
+			</figure>
+
+
+			<figure>
+				<figcaption>
+					<h4>去蝙蝠橋的紀錄片</h4>
+					<h3>影片連結以及附上一首歌(代表我們的熱戀期)我們也不是說沒有爭執,我們熱戀期當然有甜甜幸福的時候,但也有流過眼淚的時候</h3><a href="https://www.youtube.com/watch?v=IjbA3drystA">2024/01/22</a></h2><br>
+				</figcaption>
+				<img src = "static/love.jpg" width ="300">
+				<iframe src="https://www.youtube.com/embed/IjbA3drystA" width="300" height="400"></iframe>
+				<iframe src="https://www.youtube.com/embed/XbTcPNOza-4" width="300" height="400" allowfullscreen></iframe>
+			</figure>
+		<article>
+			<h5 >基本資料</h5>
+			<table width="100%" border="1">
+				<tr>
+					<td>
+						<h2  style="color:#016e92">楊荃喜</h2>
+						<h3>學校:靜宜大學</h3><br>
+						<h3>生日：2004/01/22</h3><br>
+						<h3>星座：水瓶</h3><br>
+						<h3>興趣：追劇,小說,<mark>運動</mark>,出遊,拍照,<mark>羽球,籃球</mark>等等</h3><br>
+						<h3>個人簽名:努力增重有完美線條,完成自己的學業,賺很多錢養寶寶</h3><br>
+						<h3>個性：敢愛敢恨,極品吃貨,萌萌哒,不喜歡食言,有事情憋著不說,有自己的想法</h3><br>
+						<h3>喜歡的歌手:汪東城,<mark>周杰倫,周興哲,林俊傑</mark>,曾佩慈,王靖雯</h3><br>
+						<h3>喜歡的食物:<mark>火鍋,薯條,布丁</mark></h3><br>
+						<h3>喜歡的卡通:<mark>多拉夢</mark>,櫻桃小丸子,蠟筆小新,柯南,我們這一家,<mark>兩津</mark></h3><br>
+						<h3>E-Mail:</h3><a href="mailto:yangquanxi80@gmail.com">我的信箱</a></h4><br>
+					</td>
+					<td>
+						<h2  style="color:#016e92">許翔順</h2>
+						<h3>學校:中臺科技大學</h3><br>
+						<h3>生日：2002/11/09</h3><br>
+						<h3>星座：天蠍</h3><br>
+						<h3>興趣：<mark>運動</mark>,看影片,打遊戲,<mark>羽球,籃球</mark>等等</h3><br>
+						<h3>個人簽名:運動,看影片,打遊戲,減重,理財規劃等等</h3><br>
+						<h3>個性：練習聊天,選擇性障礙,安靜,幽默,生人勿近的表情,理智,善良,親切</h3><br>
+						<h3>喜歡的歌手:鄧紫棋,五月天,<mark>周杰倫,周興哲,林俊傑</mark></h3><br>
+						<h3>喜歡的食物:滷肉飯,<mark>火鍋,薯條,布丁</mark></h3><br>
+						<h3>喜歡的卡通:<mark>多拉夢</mark>,海綿寶寶,<mark>兩津</mark></h3><br>
+						<h3>E-Mail:</h3><a href="mailto:n22601421@gmail.com">我的信箱</a></h4><br>
+					</td>
+				</tr>
+			</table>
+
+		</article>
+	</main>	
+	<footer>
+		Copyright ©  楊荃喜. All Rights Reserved.
+	</footer>
+</body>

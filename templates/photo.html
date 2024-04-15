@@ -1,0 +1,355 @@
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>照片牆</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+		header, footer, nav {
+			text-align: center;
+			padding: 10pX;
+			margin: 10pX;
+		}
+		header {
+			background-image: url("/static/pt.jpg");
+			animation: example1;
+			animation-duration: 4s;
+			animation-iteration-count: 1;
+		}
+		
+		@keyframes example1 {
+			from {
+				transform: rotate(-15deg) translateY(-100%);
+				opacity: 0;
+			}
+			to {
+				transform: rotate(0deg) translateY(0%);
+				opacity: 1;
+			}
+		}
+
+		nav , footer {
+			background-image: url("/static/oo.jpg");
+		}
+
+		body{
+			margin: 0;
+			font-family: 'Noto Sans TC', sans-serif;
+		}
+
+		.row {
+			display: flex;
+			padding: 0 4px;
+			flex-wrap: wrap;
+		}
+
+		.column {
+			flex: 25%;
+			max-width: 25%;
+			padding: 0 4px;
+		}
+
+		.column img {
+			margin-top: 8px;
+			vertical-align: middle;
+		}
+
+
+		.item {
+			width: 100%;
+			position: relative;
+		}
+
+		.item img {
+			width: 100%;
+			vertical-align: middle;
+		}
+		.item .text {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			padding: 20px;
+			background-color: rgba(245, 245, 220, 0.8);
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			opacity: 0;
+			transition: opacity .5s ;
+		}
+		.item:hover .text {
+			opacity: 1;
+		}
+		.item h2 {
+			font-size: 40px;
+			color:#c567f5;
+			font-weight: 500;
+			text-align: center
+		}
+		h2 {
+			text-shadow: 2px 2px white;
+		}
+		h1, h3 {
+			color:coral;
+		}
+		h3::before {content:"\1F320"; }
+		h1::before {content:"\1F496"; }
+
+
+		 @media (max-width: 800px) {
+		 	.column {
+		 		flex: 50%;
+		 	    max-width: 50%;
+		 	}	
+		 }
+
+		  @media (max-width: 600px) {
+		 	.column {
+		 		flex: 100%;
+		 		max-width: 100%;
+		 	}	
+		 }
+
+	</style>
+</head>
+
+
+<body>
+<header>
+	<h3 > Our Photo</h3>
+	<h1>Love Photo Wall 2023</h1>
+</header>
+<nav>
+		<a href ="/our">基本資料</a> |
+		<a href ="/story">相識到相戀故事</a> |
+		<a href ="/photo">照片牆2023</a> 
+</nav>
+<hr>
+	<section class ="row">
+	<section class ="column">
+		<div class="item">
+			<img src = "static/4.jpg" width ="300">	
+				<div class ='text'>
+					<h2>四月望高寮</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/5.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>五月逢甲商圈</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/51.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>五月都會公園</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/52.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>五月都會公園</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/53.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>五月lalaport商場</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/61.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>六月霧峰吃烤奶</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/62.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>六月KTV唱歌</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/63.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>六月沙鹿吃仙草豆花</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/76.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>七月彰化鹿港</h2>
+				</div>
+		</div>
+	</section>
+
+	<section class ="column">
+		<div class="item">
+			<img src = "static/64.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>六月逛東海商圈</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/65.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>六月景觀餐廳</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/66.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>六月景觀餐廳</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/67.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>六月景觀餐廳</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/68.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>六月景觀餐廳</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/69.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>六月景觀餐廳</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/611.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>六月去看movie</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/77.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>七月彰化鹿港</h2>
+				</div>
+		</div>
+	</section>
+
+
+	<section class ="column">
+		<div class="item">
+			<img src = "static/7.jpg" width ="300">	
+				<div class ='text'>
+					<h2>七月彰化鹿港</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/71.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>七月彰化鹿港</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/72.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>七月彰化鹿港</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/73.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>七月彰化鹿港</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/74.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>七月彰化鹿港</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/75.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>七月彰化鹿港</h2>
+				</div>
+		</div>
+	</section>
+
+
+	<section class ="column">
+		<div class="item">
+			<img src = "static/8.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>八月望高寮散步</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/81.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>八月大魯閣滑輪場</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/82.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>八月情人節</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/83.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>八月outlet三井</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/84.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>八月outlet三井</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/85.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>八月outlet三井</h2>
+				</div>
+		</div>
+
+		<div class="item">
+			<img src = "static/86.jpg" style = "width: 100%;">	
+				<div class ='text'>
+					<h2>八月outlet三井</h2>
+				</div>
+		</div>
+	</section>
+	</section>
+
+
+<footer>
+			Copyright ©  楊荃喜. All Rights Reserved.
+</footer>
+</body>
