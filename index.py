@@ -108,10 +108,53 @@ html = """
     <article>
         <section class="row">
             <div class ="colum side">
-                <h4>彼此基本資料</h4>
+                 <h4>彼此基本資料</h4>
                  <p><a href ="/our">基本資料</a></p>
-                <img src = "static/67.jpg" width ="200">
-                <img src = "static/68.jpg" width ="200">  
+                <div class="image-container" id="example1">
+                <img src = "static/67.jpg" width ="350" height = "450"> 
+                </div>
+                <button onclick="prevImage()">❮</button>
+                <button onclick="nextImage()">❯</button>
+                <button onclick="toggleCarousel()">暫停</button>
+                <script>
+                  // JavaScript 函式
+                     var intervalId;
+                        // 範例 1: 圖片切換
+                           function changeImage(containerId, imageName) {
+                            var container = document.getElementById(containerId);
+                            var image = container.querySelector("img");
+                            image.src = imageName;
+                        }
+
+                        var images = ["static/67.jpg", "static/68.jpg"];
+                        var currentIndex = 0;
+
+                        function prevImage() {
+                            currentIndex = (currentIndex - 1 + images.length) % images.length;
+                            changeImage('example1', images[currentIndex]);
+                        }
+
+                        function nextImage() {
+                            currentIndex = (currentIndex + 1) % images.length;
+                            changeImage('example1', images[currentIndex]);
+                        }
+
+                        function toggleCarousel() {
+                            var button = document.querySelector("button:last-of-type");
+                            if (intervalId) {
+                                clearInterval(intervalId);
+                                intervalId = null;
+                                button.textContent = "開始";
+                            } else {
+                                intervalId = setInterval(function() {
+                                    nextImage();
+                                }, 1000);
+                                button.textContent = "暫停";
+                            }
+                        }
+
+                        toggleCarousel();
+                    </script> 
             </div>
                 
             <div class ="colum middle">
